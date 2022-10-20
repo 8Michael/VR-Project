@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src="tutorial.js"></script>
+    <script src="https://unpkg.com/aframe-fps-look-controls-component/dist/aframe-fps-look-controls-component.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+
+    
+    
+  </head>
+  <body>
+  <a-scene cursor="rayOrigin: mouse">
+    
+     <a-sky color = "rgb(0,0,0)" id = "sky"></a-sky>
+
+<a-entity id = "one">
+    <video id = "oneday" src = "oneday.mp4"></video>
+    <a-video src = "#oneday" width = "70" height = "35" ></a-video>
+    </a-entity>
+
+
+<a-box position = "0 -5 -4" id = "begin"></a-box>
+<a-box position = "0 -5 -440" id = "end"></a-box>
+
+    
+<a-entity id = "entry">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -5 1 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="Hello, welcome to the tutorial. Here you will learn the basics of how to play this rhythm game." position="-5 4 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press ENTER to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+
+    <a-entity id = "notetutA">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+      <img id="a" src="noteA.PNG">
+    <a-image src="#a" position = " 0 3 -6 " scale = "2 2 2" width = "4" height = "1"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -4 1.5 -6 " scale = "3 3 3" ></a-image>
+  <a-text  value="This represents an 'A note', which can be successfully overcome by pressing the 'A' key" position="-4 5 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press 'A' to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+
+    <a-entity id = "notetutS">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+      <img id="s" src="noteS.PNG">
+    <a-image src="#s" position = " 0 3 -6 " scale = "2 2 2" width = "4" height = "1"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -2 2 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="This represents a 'S note', which can be successfully overcome by pressing the 'S' key" position="-4 5 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press 'S' to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+
+    <a-entity id = "notetutK">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+      <img id="k" src="noteK.PNG">
+    <a-image src="#k" position = " 0 3 -6 " scale = "2 2 2" width = "4" height = "1"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -1 2 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="This represents a 'K note', which can be successfully overcome by pressing the 'K' key" position="-4 5 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press 'K' to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+
+    <a-entity id = "notetutL">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+      <img id="l" src="noteL.PNG">
+    <a-image src="#l" position = " 0 3 -6 " scale = "2 2 2" width = "4" height = "1"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " 0 2 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="This represents a 'L note', which can be successfully overcome by pressing the 'L' key" position="-4 5 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press 'L' to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+    
+    <a-entity id = "judgementtut">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+      <img id="j" src="judgement.PNG">
+    <a-image src="#j" position = " 0 3 -6 " scale = "2 2 2" width = "4" height = "1"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -4 1.5 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="This is the judgement line. It determines what notes you missed or actually pressed." position="-4 5 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press ENTER to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+    
+    <a-entity id = "judgementtut2">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+  <img id="a" src="noteA.PNG">
+    <a-image src="#a" position = " 0 3 -6 " scale = "2 2 2" width = "4" height = "1"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -4 1 -6 " scale = "3 3 3" ></a-image>
+  <a-text  value="It's best to press the keys around here..." position="-4 5 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press ENTER to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+
+    <a-entity id = "combotut">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+      <img id="c" src="combo.PNG">
+    <a-image src="#c" position = " 0 3 -6 " scale = "2 2 2" width = "4" height = "1"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " 1 2 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="This is your combo score. It displays how many notes you have pressed consecutively." position="-4 5 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press ENTER to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+
+    <a-entity id = "notetest">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -5 1 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="Now that you're aware of the basics, lets have some fun...
+    
+    Try to get 20/20 notes to continue" position="-5 4 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press ENTER to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+
+    <a-entity id = "final">
+    <img id="sign" src="sign.png">
+    <a-image src="#sign" position = " 0 3.5 -6 " scale = "10 10 10" width = "2"></a-image>
+  <img id="pointer" src="pointer.png">
+    <a-image src="#pointer" position = " -5 1 -6 " scale = "3 3 3"></a-image>
+  <a-text  value="Congratulations on beating the tutorial! 
+    You are now ready to start your adventure" position="-4 4 -5.9" scale = "2 2 2"color="red"></a-text>
+  <a-text  value="Press ENTER to continue >>" position="1 1 -5.9" scale = "2 2 2"color="red"></a-text>
+</a-entity>
+    
+<a-entity animate>
+<a-box id = "startButton" sound="src: tutorial.mp3;positional:false;loop:true" color = "#15F4EE" position = "0 2.8 -3" width = "3" opacity = "0.5"></a-box>
+  
+<a-text  value="Press Enter To Start the Tutorial" align="center" width="4" font="roboto" position="0 2.8 -2.5"  color = "black"></a-text>
+</a-entity>
+
+    <a-text  value="Press T to skip the tutorial >>" position="5 6.5 -5.9" scale = "1.5 1.5 1.5"color="red" id = "skip"></a-text>
+      <!--notea-->
+          <a-box id = "notea" position = "-1.3 1 -65"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notea" position = "-1.3 1 -85"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notea" position = "-1.3 1 -105"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notea" position = "-1.3 1 -125"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notea" position = "-1.3 1 -385"depth="0.5" height="0.5" width="0.5"></a-box>
+
+
+
+      <!--notes-->
+    <a-box id = "notes"position = "-0.4 1 -145"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notes"position = "-0.4 1 -165"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notes"position = "-0.4 1 -185"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notes"position = "-0.4 1 -205"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notes"position = "-0.4 1 -395"depth="0.5" height="0.5" width="0.5"></a-box>
+
+      
+
+
+      <!--notek-->
+     <a-box id = "notek"position = "0.4 1 -225"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notek"position = "0.4 1 -245"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notek"position = "0.4 1 -265"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notek"position = "0.4 1 -285"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notek"position = "0.4 1 -405"depth="0.5" height="0.5" width="0.5"></a-box>
+
+
+
+       
+
+      <!--notel-->
+         <a-box id = "notel" position = "1.3 1 -305"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notel" position = "1.3 1 -325"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notel" position = "1.3 1 -345"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notel" position = "1.3 1 -365"depth="0.5" height="0.5" width="0.5"></a-box>
+    <a-box id = "notel" position = "1.3 1 -415"depth="0.5" height="0.5" width="0.5"></a-box>
+ 
+
+
+
+
+      <!--cursor-->
+      <a-entity id = "rig">
+          <a-entity camera position ="0 2.4 0">
+          </a-entity>
+      </a-entity>
+    <!--Background--
+    <a-entity id = "gen">
+    <video id = "genso" src = "gen.mp4"></video>
+    <a-video src = "#genso" width = "22" height = "17" ></a-video>
+    </a-entity>-->
+
+    <!--Platform-->
+  <a-plane id = "judgement" position="0 0.18 -3" rotation="-90 90 90" width="4.5" height="0.8" color = "red"></a-plane>
+
+  <a-plane id = "judgement2" position="0 0.18 2" rotation="-90 90 90" width="4.5" height="0.8" color = "red"></a-plane>
+  
+    <a-entity position = "0 0 -205" height = "1000">
+        <a-plane position="0 0.1 -290" rotation="-90 0 0" width="5" height="1000" color = "#18191a"></a-plane>
+ 
+        <a-plane position="0 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#FF8BDA"></a-plane>
+        <a-plane position="2.35 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#FF8BDA"></a-plane>
+        <a-plane position="-2.35 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#FF8BDA"></a-plane>
+        <a-plane position="1 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#15F4EE"></a-plane>
+        <a-plane position="-1 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#15F4EE"></a-plane>
+      </a-entity>
+
+      <!--events-->
+  <a-entity id = combo>
+  <a-text id="msg" value="Combo:" position="2 2 -4" color="red"></a-text>
+  <a-text id="msg2" value=" " position="2.2 1.7 -4" color="red"></a-text>
+  </a-entity>
+  
+
+
+    </a-scene>
+
+  </body>
+</html>

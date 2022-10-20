@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src = "script2.js"></script>
+
+    <script src="https://unpkg.com/aframe-fps-look-controls-component/dist/aframe-fps-look-controls-component.min.js"></script> 
+
+    
+    
+  </head>
+  <body>
+  <a-scene>
+<a-entity animate id = "startButton">
+<a-box  song id = "test1" color = "#15F4EE" position = "0 2.8 -3" width = "3" opacity = "0.5"></a-box>
+<a-box id = "startButton" id = "test1" color = "#15F4EE" position = "0 2.8 -3" width = "3" opacity = "0.5"></a-box>
+<a-text  value="Press Enter To Start" align="center" width="5" font="roboto" position="0 2.8 -2.5"  color = "black"></a-text>
+</a-entity>
+<!--sound="src: gensoConnect.mp3;positional:false"-->
+      <!--notea-->
+
+      <a-box id = "notea" position = "-1.3 1 -20"depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-box id = "notea" position = "-1.3 1 -34"depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-box id = "notea" position = "-1.3 1 -38"depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-box id = "notea" position = "-1.3 1 -48"depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-box id = "notea" position = "-1.3 1 -69"depth="0.5" height="0.5" width="0.5"></a-box>
+      <!--notes-->
+
+       <a-box id = "notes"position = "-0.4 1 -25"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notes"position = "-0.4 1 -30"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notes"position = "-0.4 1 -42"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notes"position = "-0.4 1 -54"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notes"position = "-0.4 1 -58"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notes"position = "-0.4 1 -69"depth="0.5" height="0.5" width="0.5"></a-box>
+
+<!--notel-->
+
+      <a-box id = "notel" position = "1.3 1 -30"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notel"position = "1.3 1 -34"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notel"position = "1.3 1 -62"depth="0.5" height="0.5" width="0.5"></a-box>
+      <!--notek-->
+
+       <a-box id = "notek"position = "0.4 1 -20"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notek"position = "0.4 1 -42"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notek"position = "0.4 1 -58"depth="0.5" height="0.5" width="0.5"></a-box>
+       <a-box id = "notek"position = "0.4 1 -62"depth="0.5" height="0.5" width="0.5"></a-box>
+
+      <!--cursor-->
+      <a-entity id = "rig">
+          <a-entity camera position ="0 2.4 0">
+          </a-entity>
+      </a-entity>
+    <!--Background-->
+    <a-entity id = "gen">
+    <video id = "genso" src = "gen.mp4"></video>
+    <a-video src = "#genso" width = "70" height = "35" ></a-video>
+    </a-entity>
+
+    <!--Platform-->
+  <a-plane id = "judgement" position="0 0.18 -3" rotation="-90 90 90" width="4.5" height="0.8" color = "red"></a-plane>
+
+  <a-plane id = "judgement2" position="0 0.18 2" rotation="-90 90 90" width="4.5" height="0.8" color = "red"></a-plane>
+  
+    <a-entity position = "0 0 -205">
+        <a-plane position="0 0.1 -45" rotation="-90 0 0" width="5" height="500" color = "#4d3e3e"></a-plane>
+ 
+        <a-plane position="0 0.15 -45" rotation="-90 0 0" width="0.1" height="500" material="color:#FF8BDA"></a-plane>
+        <a-plane position="2.35 0.15 -45" rotation="-90 0 0" width="0.1" height="500" material="color:#FF8BDA"></a-plane>
+        <a-plane position="-2.35 0.15 -45" rotation="-90 0 0" width="0.1" height="500" material="color:#FF8BDA"></a-plane>
+        <a-plane position="1 0.15 -45" rotation="-90 0 0" width="0.1" height="500" material="color:#15F4EE"></a-plane>
+        <a-plane position="-1 0.15 -45" rotation="-90 0 0" width="0.1" height="500" material="color:#15F4EE"></a-plane>
+      </a-entity>
+
+      <!--events-->
+  <a-text id="msg" value="Combo:" position="2 2 -4" color="red"></a-text>
+  <a-text id="msg2" value=" " position="2.2 1.7 -4" color="red"></a-text>
+  
+
+  <a-box position = "0 -5 -4" id = "events"></a-box>
+  <a-box position = "0 -5 -69" id = "eventb"></a-box>
+  <a-box position = "0 -5 -144" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -109" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -192" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -225" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -276" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -313" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -323" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -334" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -344" id = "eventbw"></a-box>
+  <a-box position = "0 -5 -358" id = "eventw"></a-box>
+  <a-box position = "0 -5 -645" id = "eventb2"></a-box>
+  <a-box position = "0 -5 -670" id = "eventw2"></a-box>
+  
+  <a-sky color = "rgb(255,255,255)" id = "sky"></a-sky>
+
+    </a-scene>
+
+  </body>
+</html>

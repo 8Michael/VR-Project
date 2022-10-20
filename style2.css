@@ -1,0 +1,15 @@
+#description{
+  flex:1;
+  text-align:center;
+}
+html,body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.welcome{
+  display:block;
+  float:left;
+  margin-right:auto;
+  width:52%;
+  height:auto;
+  
+}

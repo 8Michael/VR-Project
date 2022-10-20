@@ -1,0 +1,51 @@
+.welcome{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:52%;
+  height:auto;
+  
+}
+#play{
+  display:block;
+  position: absolute;
+  top: 280px;
+  right: 150px;
+  width: 75%;
+  height: 70%;
+  transition: all .2s ease-in-out; 
+  
+  
+}
+#play:hover{
+  transform: scale(1.05); 
+}
+#info{
+  position: absolute;
+  top: 750px;
+  right: 875px;
+  width:30%;
+  transition: all .2s ease-in-out; 
+  
+}
+#info:hover{
+  transform: scale(1.05); 
+}
+
+#credit{
+  position: absolute;
+  top: 750px;
+  right: 350px;
+  width:26.5%;
+  transition: all .2s ease-in-out; 
+  
+}
+#credit:hover{
+  transform: scale(1.05); 
+}
+body {
+ background-image: url("bgimage.png");
+ background-color: #cccccc;
+}
+
+

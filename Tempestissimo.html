@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src = "script4.js"></script>
+
+    <script src="https://unpkg.com/aframe-fps-look-controls-component/dist/aframe-fps-look-controls-component.min.js"></script> 
+
+    
+    
+  </head>
+  <body>
+  <a-scene>
+     <a-sky color = "rgb(0,0,0)" id = "sky"></a-sky>
+
+<a-entity id = "temp">
+    <video id = "tempestissimo" src = "tempest.mp4"></video>
+    <a-video src = "#tempestissimo" width = "70" height = "35" ></a-video>
+    </a-entity>
+    
+<a-entity animate>
+<a-box id = "startButton" id = "test1" color = "#15F4EE" position = "0 2.8 -3" width = "3" opacity = "0.5"></a-box>
+<a-text  value="Press Enter To Start" align="center" width="5" font="roboto" position="0 2.8 -2.5"  color = "black"></a-text>
+</a-entity>
+      <!--notea-->
+
+
+
+      <!--notes-->
+
+      
+
+
+      <!--notek-->
+
+
+       
+
+      <!--notel-->
+
+
+
+
+      <!--cursor-->
+      <a-entity id = "rig">
+          <a-entity camera position ="0 2.4 0">
+          </a-entity>
+      </a-entity>
+    <!--Background--
+    <a-entity id = "gen">
+    <video id = "genso" src = "gen.mp4"></video>
+    <a-video src = "#genso" width = "22" height = "17" ></a-video>
+    </a-entity>-->
+
+    <!--Platform-->
+  <a-plane id = "judgement" position="0 0.18 -3" rotation="-90 90 90" width="4.5" height="0.8" color = "red"></a-plane>
+
+  <a-plane id = "judgement2" position="0 0.18 2" rotation="-90 90 90" width="4.5" height="0.8" color = "red"></a-plane>
+  
+    <a-entity position = "0 0 -205" height = "1000">
+        <a-plane position="0 0.1 -290" rotation="-90 0 0" width="5" height="1000" color = "#18191a"></a-plane>
+ 
+        <a-plane position="0 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#FF8BDA"></a-plane>
+        <a-plane position="2.35 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#FF8BDA"></a-plane>
+        <a-plane position="-2.35 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#FF8BDA"></a-plane>
+        <a-plane position="1 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#15F4EE"></a-plane>
+        <a-plane position="-1 0.15 -290" rotation="-90 0 0" width="0.1" height="1000" material="color:#15F4EE"></a-plane>
+      </a-entity>
+
+      <!--events-->
+  <a-text id="msg" value="Combo:" position="2 2 -4" color="red"></a-text>
+  <a-text id="msg2" value=" " position="2.2 1.7 -4" color="red"></a-text>
+  
+
+
+    </a-scene>
+
+  </body>
+</html>
